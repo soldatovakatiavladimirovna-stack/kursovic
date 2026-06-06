@@ -244,6 +244,10 @@ footer {
     margin-top: 40px;
 }
 
+[id] {
+    scroll-margin-top: 100px; /* Укажи здесь высоту своей шапки + небольшой запас */
+}
+
 /* адаптив */
 @media (max-width: 768px) {
     .container,
