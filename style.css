@@ -246,19 +246,122 @@ footer {
 
 /* адаптив */
 @media (max-width: 768px) {
-    .hero-grid {
-        grid-template-columns: 1fr;
+    .container,
+    .container1 {
+        padding: 0 16px;
     }
 
-    .form-block {
-        grid-template-columns: 1fr;
+    .header-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
     }
 
     .nav {
-        display: none;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 40px 0;
+    }
+
+    .hero-grid,
+    .grid-container,
+    .grid-container1 {
+        grid-template-columns: 1fr;
+        display: grid;
+        gap: 24px;
     }
 
     .hero-title {
-        font-size: 2.2rem;
+        font-size: 2rem;
+    }
+
+    .hero-title1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .hero-img1,
+    .hero-img2 {
+        height: 240px;
+        border-radius: 20px;
+    }
+
+    .img {
+        width: 120px;
+        height: 160px;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .img1 {
+        width: 100%;
+        max-width: 300px;
+        height: 360px;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .scroll-container {
+        border-radius: 20px;
+        padding: 8px;
+    }
+
+    .scroll-container img {
+        width: 260px;
+        height: 180px;
+        border-radius: 18px;
+        padding: 6px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons button,
+    button {
+        width: 100%;
+    }
+
+    .section {
+        padding: 16px 0;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 24px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .card h3 {
+        font-size: 1.25rem;
+    }
+
+    .block {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    textarea {
+        border-radius: 18px;
+    }
+
+    footer {
+        padding: 24px 0;
+        margin-top: 24px;
     }
 }
